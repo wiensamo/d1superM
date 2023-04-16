@@ -1,11 +1,14 @@
 import React from 'react';
-import "./home.css";
-import ProductForm from './ProductForm';
+import ProductForm from '../producto/creacion producto/ProductForm';
+import ListProductos from '../producto/list producto/ListProductos';
+
+
 
 const Home = () => {
   return (
     <div>
-      <ProductForm/>
+      <ProductForm />
+      <ListProductos />
     </div>
   )
 }
