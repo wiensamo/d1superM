@@ -4,9 +4,10 @@ import viteLogo from '/vite.svg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
-import Header from './components/header/header'
-import Home from './components/home/Home'
-import About from './components/about/About'
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer';
+import CarrucelInicio from './components/paginainicio/CarrucelInicio';
+import Detail from './components/producto/detail/Detail';
 
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
   return (
     <div>
         <Header/> 
-        <Home />
-        <About />
+        <CarrucelInicio/>
+        <Footer/>
     </div>
   )
 }
