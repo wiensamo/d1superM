@@ -6,7 +6,9 @@ import './App.css'
 
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer';
-import CarrucelInicio from './components/paginainicio/CarrucelInicio';
+// import CarrucelInicio from '../components/paginainicio/CarrucelInicio';
+import Login from './components/login/Login';
+import CarrucelInicio from './components/pagina inicio/CarrucelInicio';
 import Detail from './components/producto/detail/Detail';
 
 
@@ -16,7 +18,7 @@ function App() {
   return (
     <div>
         <Header/> 
-        <CarrucelInicio/>
+        <Login/>
         <Footer/>
     </div>
   )

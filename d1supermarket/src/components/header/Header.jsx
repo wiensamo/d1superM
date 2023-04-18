@@ -34,7 +34,7 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <div class="button">
-                                        <a href="" class="btn">Inicio sesión</a>
+                                        <a href="" class="btn">Inicio sesiÃ³n</a>
                                     </div>
                                 </li>
                             </ul>
