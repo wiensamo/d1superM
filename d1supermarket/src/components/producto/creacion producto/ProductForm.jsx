@@ -3,7 +3,10 @@ import './productForm.css';
 
 function ProductForm() {
   return (
-    <form>
+    
+    <section>
+      <div class="container"></div>
+      <form>
       <div>
         <label htmlFor="name">Nombre:</label>
         <input type="text" id="name" name="name" required />
@@ -49,6 +52,8 @@ function ProductForm() {
         <button type="submit">Guardar</button>
       </div>
     </form>
+    </section>
+    
   );
 }
 

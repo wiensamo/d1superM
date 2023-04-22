@@ -1,5 +1,6 @@
 import React from "react";
-import cesta from '../inicioPortal/img/cesto_comida.avif'
+//import cesta from '../inicioPortal/img/cesto_comida.avif'
+
 
 const InicioPortal = () => {
   return (
@@ -12,7 +13,7 @@ const InicioPortal = () => {
         </div>
 
         <div style={{ textAlign: 'right' }}>
-          <img src={cesta} alt="Imagen" style={{ marginLeft: '20px' }} />
+          <img src="../inicioPortal/img/cesto_comida.avif" alt="Imagen" style={{ marginLeft: '20px' }} />
         </div>
       </div>
   );

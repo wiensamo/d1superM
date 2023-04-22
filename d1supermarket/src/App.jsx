@@ -6,8 +6,10 @@ import './App.css'
 
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer';
-import CarrucelInicio from './components/paginainicio/CarrucelInicio';
+import CarrucelInicio from './components/pagina inicio/CarrucelInicio';
 import Detail from './components/producto/detail/Detail';
+import InicioPortal from './components/inicio portal/img/InicioPortal';
+import ProductForm from './components/producto/creacion producto/ProductForm';
 
 
 function App() {
@@ -16,7 +18,8 @@ function App() {
   return (
     <div>
         <Header/> 
-        <CarrucelInicio/>
+        <Detail/>
+        <ProductForm/>
         <Footer/>
     </div>
   )

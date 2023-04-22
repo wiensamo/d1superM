@@ -4,7 +4,7 @@ form {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto 50px;
     grid-template-areas:
-      "nombre nombre nombre"
+      "nombre valor cantidad"
       "valor cantidad tipo"
       "promocion imagen descripcion"
       ". . botones";
