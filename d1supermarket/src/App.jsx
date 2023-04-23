@@ -6,12 +6,12 @@ import './App.css'
 
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer';
-import Login from './components/login/Login';
+
 import CarrucelInicio from './components/pagina inicio/CarrucelInicio';
 import Detail from './components/producto/detail/Detail';
-import Producto, { ListProductos } from './components/producto/list producto/ListProductos';
-import HeaderLogeado from './components/header/headerlogeado'
-import Sidebar from './components/Sidebar/Sidebar'
+import InicioPortal from './components/inicio portal/img/InicioPortal';
+import ProductForm from './components/producto/creacion producto/ProductForm';
+
 
 import ProductoForm from './components/producto/creacion producto/ProductForm'
 
@@ -20,10 +20,11 @@ function App() {
 
   return (
     <div>
-        
-        <Sidebar/>
-        
-        
+
+<Header/> 
+        <Detail/>
+        <ProductForm/>
+        <Footer/>
     </div>
   )
 }

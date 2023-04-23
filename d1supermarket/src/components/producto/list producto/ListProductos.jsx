@@ -8,25 +8,24 @@ export class ListProductos extends Component {
   render() {
     return (
       <div>
-        <form>
-  <fieldset>
-    <legend>Tamaño del zumo de fruta</legend>
-    <p>
-      <input type="text" />
-      <label for="size_1">id</label>
-    </p>
-    <p>
-      
-      <label for="size_2">Mediano</label>
-    </p>
-    <p>
-      
-      <label for="size_3">Grande</label>
-    </p>
-  </fieldset>
-</form>
-
-       </div>
+        <table class="lista_producto">
+          <tr>
+            <th>Id</th>
+            <th>Producto</th>
+            <th>Tipo</th>
+            <th>Acciones</th>
+          </tr>
+          <tr>
+            <td>001</td>
+            <td>Manzana</td>
+            <td>Comida</td>
+            <td>
+              <button>lapiz</button>
+              <button>caneca</button>
+            </td>
+          </tr>
+        </table>        
+      </div>
     )
   }
 }
