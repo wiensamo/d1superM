@@ -6,20 +6,24 @@ import './App.css'
 
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer';
-// import CarrucelInicio from '../components/paginainicio/CarrucelInicio';
 import Login from './components/login/Login';
 import CarrucelInicio from './components/pagina inicio/CarrucelInicio';
 import Detail from './components/producto/detail/Detail';
+import Producto, { ListProductos } from './components/producto/list producto/ListProductos';
+import HeaderLogeado from './components/header/headerlogeado'
+import Sidebar from './components/Sidebar/Sidebar'
 
+import ProductoForm from './components/producto/creacion producto/ProductForm'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-        <Header/> 
-        <Login/>
-        <Footer/>
+        
+        <Sidebar/>
+        
+        
     </div>
   )
 }

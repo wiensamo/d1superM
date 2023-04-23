@@ -14,7 +14,7 @@ const CarrucelInicio = () => {
                 Encontraras todo lo que <br/> 
                 necesites para tus <br/>
                 insumos de consumo diario <br/>
-                en Bogotá </p>
+                en Bogota </p>
           </div>
           <div class="col" >
             <img src="mercave-canasta-1.png" class="d-block" />
