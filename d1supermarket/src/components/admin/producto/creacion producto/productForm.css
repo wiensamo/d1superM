@@ -1,0 +1,34 @@
+/* Estilos del formulario */
+
+  
+  /* Estilos de los campos de texto */
+
+  
+  /* Estilos de los botones */
+  button {
+    padding: 12px 20px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #007bff;
+  }
+  
+  /* Alineación del botón cancelar */
+  .cancelar {
+    justify-self: start;
+  }
+  
+  /* Alineación del botón guardar */
+  .guardar {
+    justify-self: end;
+  }
+  form > *:not(.botones) {
+    padding: 5px;
+  }

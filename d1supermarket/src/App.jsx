@@ -1,30 +1,42 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Routes, Route, Outlet, Link } from "react-router-dom";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+
 import './App.css'
 
-import Header from './components/header/Header'
-import Footer from './components/footer/Footer';
+import CarrucelInicio from './components/portal/home/CarrucelInicio';
+import Categoria from './components/portal/categorias/Categoria'
+import Login from './components/login/Login'
+import E404 from './components/errorPages/e404'
+import Layout from './components/portal/layout/layaut';
+import Producto from './components/portal/producto/producto';
 
-import CarrucelInicio from './components/pagina inicio/CarrucelInicio';
-import Detail from './components/producto/detail/Detail';
-import InicioPortal from './components/inicio portal/img/InicioPortal';
-import ProductForm from './components/producto/creacion producto/ProductForm';
-
-
-import ProductoForm from './components/producto/creacion producto/ProductForm'
-
+import LayoutAdmin from './components/admin/layout/layautAdmin';
+import ProductForm from './components/admin/producto/creacion producto/ProductForm';
+import Detail from './components/portal/producto/detail/Detail';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-
-<Header/> 
-        <Detail/>
-        <ProductForm/>
-        <Footer/>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<CarrucelInicio />} />
+            <Route path="products" element={<Categoria />} />
+            <Route path="products/:id" element={<Producto />} />
+            <Route path="products/:id/detail" element={<Detail />} />
+            <Route path="*" element={<E404 />} />
+          </Route> 
+          <Route path="/admin" element={<LayoutAdmin />}>
+            <Route index element={<CarrucelInicio />} />
+            <Route path="products/create" element={<ProductForm />} />
+          </Route> 
+          <Route path="/login">
+             <Route index element={<Login />} />
+          </Route>
+        </Routes> 
     </div>
   )
 }
